@@ -1,0 +1,27 @@
+{
+  "name": "@joefraley/eslint-config",
+  "version": "0.0.0",
+  "description": "",
+  "files": ["index.js"],
+  "main": "index.js",
+  "scripts": {
+    "precommit": "npm run lint",
+    "lint": "eslint --fix test.js",
+    "test": "echo test"
+  },
+  "peerDependencies": {
+    "eslint": ">= 3"
+  },
+  "dependencies": {
+    "babel-eslint": "7.2.3",
+    "eslint-config-prettier": "2.3.0",
+    "eslint-plugin-babel": "4.1.2",
+    "eslint-plugin-prettier": "2.2.0",
+    "eslint-plugin-react": "7.3.0"
+  },
+  "devDependencies": {
+    "eslint": "4.6.0",
+    "husky": "0.14.3",
+    "prettier": "1.6.1"
+  }
+}
