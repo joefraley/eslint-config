@@ -1,18 +1,19 @@
 {
   "name": "@joefraley/eslint-config",
   "version": "0.0.1",
-  "description": "",
+  "description": "A custom eslint configuration for my JavaScript projects",
   "files": [
     "index.js"
   ],
   "main": "index.js",
   "scripts": {
-    "precommit": "npm run lint",
-    "lint": "eslint --fix test.js",
+    "precommit": "npm run lint && git add -A",
+    "lint": "eslint --fix index.js",
     "test": "echo test"
   },
   "peerDependencies": {
-    "eslint": ">= 3"
+    "eslint": ">= 3",
+    "prettier": ">= 1.6.1"
   },
   "dependencies": {
     "babel-eslint": "7.2.3",
@@ -23,7 +24,6 @@
   },
   "devDependencies": {
     "eslint": "4.6.0",
-    "husky": "0.14.3",
     "prettier": "1.6.1"
   }
 }
